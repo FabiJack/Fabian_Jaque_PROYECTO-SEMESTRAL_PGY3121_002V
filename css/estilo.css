@@ -34,6 +34,16 @@ img {
   width: 45%;
 }
 
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+  font-size: small;
+  text-align: center;
+}
+
 /* Botones */
 
 button {
