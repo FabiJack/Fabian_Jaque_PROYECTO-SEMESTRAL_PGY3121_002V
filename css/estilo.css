@@ -1,6 +1,13 @@
-/* Div Contenedor */
-.container {
-    position: absolute;
+.texto-sombra {
+  text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px black;
+  color: white; 
+  font-size: 40px;
+}
+
+.body_index {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
 }
 
 .logo{
@@ -10,12 +17,6 @@
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-}
-
-.body_index {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
 }
   
 h1, h2, h3, h4, p, pre {
@@ -39,9 +40,14 @@ table, th, td {
   border-collapse: collapse;
 }
 th, td {
-  background-color: #96D4D4;
+  background-color: grey;
   font-size: small;
   text-align: center;
+}
+
+/* Div Contenedor */
+.container {
+  position: absolute;
 }
 
 /* Botones */
@@ -68,11 +74,13 @@ button:hover {background-color: #3d3a3a}
 }
 
 a:link {
-  text-decoration: none;
+  text-decoration: solid;
+  color: #3d3a3a;
 }
 
 a:visited {
-  text-decoration: none;
+  text-decoration: solid;
+  color: #3d3a3a;
 }
 
 a:hover {
