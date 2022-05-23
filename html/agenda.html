@@ -25,24 +25,41 @@
         <br>
         <h2>AGENDA TU HORA</h2>
         <br>
-        <form action="/action_page.php">
+        <form action="/action_page.php" class="was-validated">
             <div class="form-group">
                 <label for="nom">Nombre:</label>
-                <input type="text" class="form-control" id="nom" placeholder="Nombre Apellido" name="nombre">
+                <input type="text" class="form-control" id="nom" placeholder="Nombre Apellido" name="nombre" required>
             </div>
+            <br>
             <div class="form-group">
                 <label for="cor">Correo electronico:</label>
-                <input type="email" class="form-control" id="cor" placeholder="nombre@correo.cl" name="correo">
+                <input type="email" class="form-control" id="cor" placeholder="nombre@correo.cl" name="correo" required>
             </div>
+            <br>
             <div class="form-group">
                 <label for="tel">telefono:</label>
-                <input type="text" class="form-control" id="tel" placeholder="+569 1234 5678" name="telefono">
+                <input type="text" class="form-control" id="tel" placeholder="+569 1234 5678" name="telefono" required>
             </div>
+            <br>
             <div class="form-group">
-                <label for="ms">Mensaje:</label>
-            <textarea class="form-control" id="ms" style="width:500px; height:100px;" name="mensaje"></textarea>
+                <label for="ms">ARREGLO/MANTENCION:</label>
+                <select id="arre" name="arreglo">
+                    <option value="1">ELECTRONICA</option>
+                    <option value="2">CAJA DE CAMBIO</option>
+                    <option value="3">SUSPENSION/DIRECCION</option>
+                </select>
+                <select name="hora" id="hr">
+                    <option value="1">09:00</option>
+                    <option value="2">10:00</option>
+                    <option value="3">11:00</option>
+                    <option value="4">12:00</option>
+                    <option value="5">13:00</option>
+                    <option value="6">15:00</option>
+                    <option value="7">16:00</option>
+                    <option value="8">17:00</option>
+                </select>
             </div>
-        
+            <br>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>

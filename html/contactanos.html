@@ -27,22 +27,22 @@
         <br>
         <h2>Formulario de contacto</h2>
         <br>
-        <form action="/action_page.php">
+        <form action="/action_page.php" class="was-validated">
             <div class="form-group">
                 <label for="nom">Nombre:</label>
-                <input type="text" class="form-control" id="nom" placeholder="Nombre Apellido" name="nombre">
+                <input type="text" class="form-control" id="nom" placeholder="Nombre Apellido" name="nombre" required>
             </div>
             <div class="form-group">
                 <label for="cor">Correo electronico:</label>
-                <input type="email" class="form-control" id="cor" placeholder="nombre@correo.cl" name="correo">
+                <input type="email" class="form-control" id="cor" placeholder="nombre@correo.cl" name="correo" required>
             </div>
             <div class="form-group">
                 <label for="tel">telefono:</label>
-                <input type="text" class="form-control" id="tel" placeholder="+569 1234 5678" name="telefono">
+                <input type="text" class="form-control" id="tel" placeholder="+569 1234 5678" name="telefono" required>
             </div>
             <div class="form-group">
                 <label for="ms">Mensaje:</label>
-            <textarea class="form-control" id="ms" style="width:500px; height:100px;" name="mensaje"></textarea>
+            <textarea class="form-control" id="ms" style="width:500px; height:100px;" name="mensaje" required></textarea>
             </div>
             <div class="form-group form-check">
             <label class="form-check-label">
